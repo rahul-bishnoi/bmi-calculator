@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="main">
+    <h1 class="title">CALCULATE YOUR BMI</h1>
+
+    <p class="description">
+        The body mass index (BMI) calculator calculates body mass index from your weight and height.
+    </p>
+
+    <div class="bmi_form">
+        <form  class="calculate_bmi" id="calculate-form">
+
+        <input type="number" class="bmi_input" id="height-cm" placeholder="Height in cms">
+        
+
+        <input type="text" class="bmi_input" id="weight-kg" placeholder="Weight in kgs">
+       
+
+        <button class="button button_flex">
+            Calculate My BMI <i class="ri-arrow-right-line"></i>
+        </button>
+        </form>
+    </div>
+<p class="bmi_message" id="calculate-message"></p>
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

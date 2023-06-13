@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #282828;
+    color: whitesmoke;
+    height: 90vh;
+    
+}
+
+.main {
+  width: 70%;
+  height: 90%;
+  margin-left: 180px;
+  margin-top: 40px;
+  border: 2px solid rgb(38, 31, 31);
+  box-shadow: 0 1px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.title{
+  font-size: 3em;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 50px;
+}
+.description{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+
+
+.bmi_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+
+input,
+button{
+ font-size: 1rem;
+ font-family: 'Red Hat Display', sans-serif;
+}
+
+.calculate_bmi{
+    display: grid;
+    row-gap: 1rem;
+}
+.bmi_input{
+    width: 100%;
+    background: transparent;
+    padding: 20px 56px 20px 24px;
+    border: 2px solid #55c2da;
+    color: #fff;
+}
+
+.button{
+    background-color: #55c2da;
+    padding: 18px 32px;
+    border: none;
+    color: #1A1A1D;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 20px;
+
+  }
+  .button:hover{
+    box-shadow: 0 1px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+  }
+  .button i{
+    font-size: 1.25rem;
+    transition: transform .3s;
+  }
+  .button_flex{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button_flex:hover i{
+   transform: translateX(.25rem);
+  }
+.bmi_message{
+    transform: translateY(1rem);
+    font-size: 1.5rem;
+    margin-left: 410px;
+    margin-top: -130px;
+}
+/*To remove counter in number field*/
+.bmi_input::-webkit-outer-spin-button,
+.bmi_input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.color-red{
+    color: #ed5a5a;
+}
+.color-green{
+   color: #abdf3a;
+}
+
+
+@media screen  and (max-width: 600px){
+  .main{
+    width: 90%;
+    height: 90%;
+    margin-left: 12px;
+    margin-top: 50px;
+
+  }
+  .title{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 30px;
+  }
+  .description{
+    text-align: center;
+    margin-bottom: -70px;
+    font-size: 1rem;
+}
+
+  .bmi_input{
+  width: 50%;
+  height: 5px;
+  background: transparent;
+  padding: 20px 56px 20px 24px;
+  border: 2px solid #55c2da;
+  color: #fff;
+}
+
+.bmi_message{
+transform: translateY(2rem);
+font-size: 1.2rem;
+margin-left: 60px;
+margin-top: -150px;
+
+}
+input{
+font-size: .8rem;
+}
+.bmi_message{
+  font-size: 1rem;
+  margin-left: 25px;
+  margin-top: -150px;
+  
+  }
+.button{
+  width: 190px;
+  font-size: .8rem;
+}
+}
+
+
+@media screen  and (min-width: 608px){
+  .main{
+    width: 80%;
+    height: 70%;
+    margin-left: 88px;
+    margin-top: 50px;
+
+  }
+  .title{
+    font-size: 46px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 30px;
+  }
+  .description{
+    text-align: center;
+    margin-bottom: -70px;
+    font-size: 1.5rem;
+}
+
+  .bmi_input{
+  width: 80%;
+  height: 15px;
+  background: transparent;
+  padding: 20px 56px 20px 24px;
+  border: 2px solid #55c2da;
+  color: #fff;
+}
+
+.bmi_message{
+transform: translateY(1rem);
+font-size: 1.5rem;
+margin-left: 160px;
+margin-top: -130px;
+
+}
+input{
+font-size: 1.4rem;
+}
+.button{
+  font-size: 1.3rem;
+}
+}
+
+@media screen  and (min-width: 1023px){
+  .main{
+    width: 80%;
+    height: 90%;
+    margin-left: 58px;
+    margin-top: 50px;
+
+  }
+  .title{
+    font-size: 35px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 30px;
+  }
+  .description{
+    text-align: center;
+    margin-bottom: -70px;
+    font-size: 1.1rem;
+
+}
+
+  .bmi_input{
+  width: 60%;
+  height: 8px;
+  background: transparent;
+  padding: 20px 56px 20px 24px;
+  border: 2px solid #55c2da;
+  color: #fff;
+}
+
+.bmi_message{
+transform: translateY(1rem);
+font-size: 1.2rem;
+margin-left: 300px;
+margin-top: -130px;
+}
+
+}
+
+
+
+
